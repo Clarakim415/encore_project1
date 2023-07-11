@@ -43,5 +43,5 @@ def search():
         f.write(keyword) # write keyword to file
     return jsonify("입력되었습니다.")
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0',debug=True) # updates every changes
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0',debug=True) # updates every changes
