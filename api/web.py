@@ -44,4 +44,4 @@ def search():
     return jsonify("입력되었습니다.")
 
 if __name__ == '__main__':
-    app.run(debug=True) # updates every changes
+    app.run(host='0.0.0.0',debug=True) # updates every changes
