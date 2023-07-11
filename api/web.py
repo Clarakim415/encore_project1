@@ -5,7 +5,7 @@ import folium
 
 app = Flask(__name__)
 
-df = pd.read_csv('../data/서울시 지하철역 주소,위도,경도.csv')
+df = pd.read_excel('../data/서울시 지하철역 주소,위도,경도 ver0.7.xlsx',index_col=0)
 
 gmaps_key = "AIzaSyCElPwHnJigXm4nMaHQuayHLl0KTsuhiyo"
 gmaps = googlemaps.Client(key = gmaps_key)
