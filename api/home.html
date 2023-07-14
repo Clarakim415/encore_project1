@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    function input() {
+      var search = prompt("검색하고 싶은 역명을 입력해주세요", "예: 남부터미널");
+
+      $.post({
+        type: "POST",
+        url: "search",
+        data: search,
+        contentType: "application/text; charset=utf-8",
+        dataType: "json"
+      }).done(function(data) {
+        alert(data);
+      }).fail(function(data) {
+        alert("POST failed");
+      });
+    }
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+<style>
+.map div {
+    
+    display: flex;
+}
+  
+.mapping {
+  padding-left:50px;
+}
+
+.content div {
+    display: flex;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Gugi', cursive;
+}
+</style>
+
+<html>
+    <head></head>
+    <body>
+        <h2>편안한 지하철</h2>
+        <div class="content">
+            <div class="map">
+              <div class="mapping">
+                <div class="replace">
+                </div>
+              </div>
+                <a href='https://ifh.cc/v-zcnoXt' target='_blank'><img src='https://ifh.cc/g/zcnoXt.jpg' height="550" ></a>
+            </div>
+            
+        </div>
+    </body>
+</html>
